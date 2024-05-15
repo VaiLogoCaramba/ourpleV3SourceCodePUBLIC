@@ -251,7 +251,7 @@ class Paths
 	{
 		#if sys
 		#if MODS_ALLOWED
-		if (!ignoreMods && FileSystem.exists(modFolders(key)))
+		if (!ignoreMods && Assets.exists(modFolders(key)))
 			return File.getContent(modFolders(key));
 		#end
 
@@ -279,7 +279,7 @@ class Paths
 	{
 		#if MODS_ALLOWED
 		var file:String = modsFont(key);
-		if(FileSystem.exists(file)) {
+		if(Assets.exists(file)) {
 			return file;
 		}
 		#end
@@ -289,7 +289,7 @@ class Paths
 	inline static public function fileExists(key:String, type:AssetType, ?ignoreMods:Bool = false, ?library:String)
 	{
 		#if MODS_ALLOWED
-		if(FileSystem.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
+		if(Assets.exists(mods(currentModDirectory + '/' + key)) || FileSystem.exists(mods(key))) {
 			return true;
 		}
 		#end
