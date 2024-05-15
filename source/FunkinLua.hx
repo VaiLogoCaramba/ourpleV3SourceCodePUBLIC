@@ -252,6 +252,7 @@ class FunkinLua {
 		});
 
 		// shader shit
+		#if desktop
 		Lua_helper.add_callback(lua, "initLuaShader", function(name:String, glslVersion:Int = 120) {
 			if(!ClientPrefs.shaders) return false;
 
