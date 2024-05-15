@@ -378,7 +378,9 @@ class FreeplayState extends MusicBeatState
 			}); //ON COMPLETE THEN MAKE THE ROCK FALL
 
 		}
-
+                #if android
+		addVirtualPad(LEFT_RIGHT, A_B_C);
+		#end
 		super.create();
 	}
 
