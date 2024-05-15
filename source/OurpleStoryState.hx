@@ -69,7 +69,9 @@ class OurpleStoryState extends MusicBeatState
         }
         add(options);
         change();
-
+        #if android
+	addVirtualPad(LEFT_RIGHT, A_B);
+	#end
         super.create();
 
     }
