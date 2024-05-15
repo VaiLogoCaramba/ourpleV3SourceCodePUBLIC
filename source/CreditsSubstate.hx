@@ -242,6 +242,9 @@ class CreditsSubstate extends MusicBeatSubstate
 		new FlxTimer().start(0.1, function (f:FlxTimer){
 			quitting=false;
 		});
+		#if android
+		addVirtualPad(LEFT_RIGHT, A_B);
+		#end
 		super.create();
 	}
 
