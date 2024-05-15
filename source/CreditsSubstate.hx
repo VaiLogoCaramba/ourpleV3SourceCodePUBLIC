@@ -96,7 +96,8 @@ class CreditsSubstate extends MusicBeatSubstate
 			['Cold_Vee',		'cold',		'Director, Programmer',								'https://twitter.com/cold_vee',	'444444'],
 
 			['Data',		'data',		'Director, Programmer',								'https://twitter.com/FixedData',	'444444'],
-			['fabr',		'fabr',		'Programmer',								'https://twitter.com/fabr2088964',	'444444'],
+			['fabr',		'fabr',		'Programmer','https://twitter.com/fabr2088964',	'444444'],
+			['SINIX SKR',           'SINIX SKR',    'Programmer', 'Porter',],
 			['funkypop',	'funkypop',	'Programmer, Mac Tester',					'https://twitter.com/funkypoppp',	'444444'],
 			['Melyndee ',		'jackie',		'Programmer , Artist',								'https://twitter.com/mellydees',	'444444'],
 			['Lossarquo',		'loss',		'Artist',								'https://twitter.com/lossarquo',	'444444'],
