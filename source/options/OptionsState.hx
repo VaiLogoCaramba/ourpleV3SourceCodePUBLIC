@@ -147,6 +147,15 @@ class OptionsState extends MusicBeatState
 					FlxG.sound.music.volume = 0;
 				}
 				else MusicBeatState.switchState(new MainMenuState());
+
+				#if android
+		if (virtualPad.buttonC.justPressed) {
+			#if android
+			removeVirtualPad();
+			#end
+			openSubState(new android.AndroidControlsSubState());
+		}
+		#end
 			}
 	
 			if (controls.ACCEPT) {
