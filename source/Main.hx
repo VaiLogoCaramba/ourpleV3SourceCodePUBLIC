@@ -120,6 +120,7 @@ class Main extends Sprite
 			DiscordClient.initialize();
 			Application.current.window.onClose.add(function() {
 				DiscordClient.shutdown();
+				#end
 			});
 		}
 		
