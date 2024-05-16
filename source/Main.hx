@@ -121,7 +121,7 @@ class Main extends Sprite
 			Application.current.window.onClose.add(function() {
 				DiscordClient.shutdown();
 				#end
-			});
+			);
 		}
 		
 	}
