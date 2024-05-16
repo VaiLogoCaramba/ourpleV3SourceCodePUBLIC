@@ -1055,6 +1055,11 @@ class PlayState extends MusicBeatState
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
 
+	        #if android
+		addAndroidControls();
+		androidControls.visible = true;
+		#end
+
 		startingSong = true;
 		
 		#if LUA_ALLOWED
