@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Sonic Legacy
+name: Ss
 
 # Controls when the action will run. 
 on:
@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   buildAndroid:
-    name: Sonic Legacy 2011
+    name: Ss
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -85,5 +85,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: I have just one question 
+          name: Ss
           path: export/release/android/bin/app/build/outputs/apk/debug
